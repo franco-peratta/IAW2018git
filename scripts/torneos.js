@@ -4,7 +4,6 @@ window.onload = function() {
 };
 
 function cargarTorneos() {
-	// localStorage.clear();
 	var div = document.getElementById("torneosactivos");
 
 	if (localStorage.getItem("torneos") !== null) {
@@ -43,5 +42,7 @@ function cargarTorneos() {
 }
 
 function seleccionarTorneo(torneo) {
-	console.log(torneo);
+	for (var i = 0; i < localStorage.length; i++) {
+		console.log(localStorage.getItem(localStorage.key(i)));
+	}
 }

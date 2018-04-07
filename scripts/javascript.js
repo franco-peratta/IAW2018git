@@ -64,19 +64,21 @@ function newForm() {
 				+ format + '","cantTeams":' + teams + ',"cantPlayers": ' + maxp
 				+ '}] }';
 		localStorage.setItem("torneos", txt);
-		localStorage.setItem("index", 0);
+		localStorage.setItem("index_torneo", 0);
 	} else {
 		var txt = '{"nombre": "' + tname + '","formato": "' + format
 				+ '","cantTeams": ' + teams + ',"cantPlayers":' + maxp + '}';
 
-		torneos.torneo.unshift(JSON.parse(txt));
+		torneos.torneo.push(JSON.parse(txt));
 
 		localStorage.setItem("torneos", JSON.stringify(torneos));
 
-		var index = localStorage.getItem("index");
-		index++;
-		localStorage.setItem("index", index);
+		var index_torneo = localStorage.getItem("index_torneo");
+		index_torneo++;
+		localStorage.setItem("index_torneo", index_torneo);
 	}
+
+	localStorage.setItem("index_equipo", 0);
 
 	var json_equipos = '{"equipo": []}';
 
@@ -147,11 +149,10 @@ function confirm_team() {
 	var torneos = JSON.parse(localStorage.getItem("torneos"));
 
 	// Obtengo numero de torneo
-	var index = localStorage.getItem("index");
+	var index_torneo = localStorage.getItem("index_torneo");
 
-	// ACA DESPUES NO VA A SER CERO EL INDICE! OJO!
 	var json_equipos = JSON.parse(localStorage
-			.getItem(torneos.torneo[index].nombre));
+			.getItem(torneos.torneo[index_torneo].nombre));
 
 	var equipo;// nombre del equipo
 
@@ -167,29 +168,34 @@ function confirm_team() {
 	// secuencia.
 
 	var jugador = '';
+	var index_equipo = localStorage.getItem("index_equipo");
 
-	$('#modalForm input').each(function() {
-		var input = $(this);
-		switch (input.attr('name')) {
-		case "fname":
-			jugador = '{ "nombre":"' + input.val() + '",';
-			break;
+	$('#modalForm input').each(
+			function() {
+				var input = $(this);
+				switch (input.attr('name')) {
+				case "fname":
+					jugador = '{ "nombre":"' + input.val() + '",';
+					break;
 
-		case "dni":
-			jugador += '"DNI":"' + input.val() + '",';
-			break;
-		case "edad":
-			jugador += '"edad":' + input.val() + ' }';
-			// console.log(jugador);
-			// console.log(json_equipos);
-			json_equipos.equipo[0].jugador.unshift(JSON.parse(jugador));
-		}
-	});
+				case "dni":
+					jugador += '"DNI":"' + input.val() + '",';
+					break;
+				case "edad":
+					jugador += '"edad":' + input.val() + ' }';
+					json_equipos.equipo[index_equipo].jugador.unshift(JSON
+							.parse(jugador));
+					localStorage.setItem("index_equipo", index_equipo);
+				}
+			});
 
 	// guardo el json con el nombre del torneo
-
-	localStorage.setItem(torneos.torneo[index].nombre, JSON
+	var index_torneo = localStorage.getItem("index_torneo");
+	localStorage.setItem(torneos.torneo[parseInt(index_torneo)].nombre, JSON
 			.stringify(json_equipos));
+
+	index_equipo++;
+	localStorage.setItem("index_equipo", index_equipo);
 
 	$('#mymodal').modal('hide');
 
