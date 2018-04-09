@@ -27,9 +27,8 @@ window.onload = function() {
  * format = Jorneos.torneo[i].formato; text = s1 + tname + s2 + format + s3;
  * 
  * div.insertAdjacentHTML('beforeend', text); text = ''; } } // else { //
- * div.insertAdjacentHTML('beforeend', // '<h3>No hay torneos activos 1</h3>'); // }
- *  } else { div.insertAdjacentHTML('beforeend', '<h3>No hay torneos activos</h3>'); }
- *  }
+ * div.insertAdjacentHTML('beforeend', // '<h3>No hay torneos activos 1</h3>'); // } }
+ * else { div.insertAdjacentHTML('beforeend', '<h3>No hay torneos activos</h3>'); } }
  */
 
 function cargarTorneos() {
@@ -68,11 +67,16 @@ function cargarTorneos() {
 }
 
 function seleccionarTorneo(torneo) {
+	var json = JSON.parse(localStorage.getItem("datos"));
 
-	for (var i = 0; i <= localStorage.length; i++) {
+	// guardo en local storage el JSON del torneo elegido SOLAMENTE.
 
-		if (torneo === JSON.parse(localStorage.getItem("datos")).torneo[i].nombre) {
-			console.log("hola" + torneo);
+	for (i = 0; i < json.torneo.length; i++) {
+		if (json.torneo[i].nombre === torneo) {
+			var asd = json.torneo[i];
+			localStorage.setItem("torneo_elegido", JSON
+					.stringify(json.torneo[i]));
+			break;
 		}
 	}
 }

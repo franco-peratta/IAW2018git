@@ -5,10 +5,17 @@
 			"formato": "league",
 			"cantTeams": 2,
 			"cantPlayers": 5,
+			"estado": "creado",
 			"equipo": [
 				{
 					"nombre": "pichichen",
 					"id": 0,
+					"GP": 0,
+					"W": 0,
+					"L": 0,
+					"PF": 0,
+					"PD": 0,
+					"Pts": 0,
 					"jugador": [
 						{
 							"nombre": "Juan",
@@ -40,6 +47,12 @@
 				{
 					"nombre": "dollar blue",
 					"id": 1,
+					"GP": 0,
+					"W": 0,
+					"L": 0,
+					"PF": 0,
+					"PD": 0,
+					"Pts": 0,
 					"jugador": [
 						{
 							"nombre": "Juan",
@@ -71,6 +84,12 @@
 				{
 					"nombre": "wd40",
 					"id": 2,
+					"GP": 0,
+					"W": 0,
+					"L": 0,
+					"PF": 0,
+					"PD": 0,
+					"Pts": 0,
 					"jugador": [
 						{
 							"nombre": "Juan",
@@ -102,6 +121,12 @@
 				{
 					"nombre": "hot potatoes",
 					"id": 3,
+					"GP": 0,
+					"W": 0,
+					"L": 0,
+					"PF": 0,
+					"PD": 0,
+					"Pts": 0,
 					"jugador": [
 						{
 							"nombre": "1",
@@ -195,10 +220,17 @@
 			"formato": "knockout",
 			"cantTeams": 2,
 			"cantPlayers": 5,
+			"estado": "creado",
 			"equipo": [
 				{
 					"nombre": "Cloud0",
 					"id": 0,
+					"GP": 0,
+					"W": 0,
+					"L": 0,
+					"PF": 0,
+					"PD": 0,
+					"Pts": 0,
 					"jugador": [
 						{
 							"nombre": "1",
@@ -230,6 +262,12 @@
 				{
 					"nombre": "FaZe",
 					"id": 1,
+					"GP": 0,
+					"W": 0,
+					"L": 0,
+					"PF": 0,
+					"PD": 0,
+					"Pts": 0,
 					"jugador": [
 						{
 							"nombre": "1",
