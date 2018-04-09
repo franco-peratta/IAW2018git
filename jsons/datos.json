@@ -273,8 +273,10 @@
 					],
 					"fecha2": [
 						{
-							,"visistante":2,"puntosLocal":0,
-							,"puntosLocal":0,"puntosVisitante":0,
+							"local": 1,
+							"visistante": 2,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
 							"fecha": "27-04-2018",
 							"estado": "pendiente"
 						}
