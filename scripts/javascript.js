@@ -215,6 +215,35 @@ function confirm_team() {
 	}
 }
 
+function saveFile(){
+	
+	var archivos = document.getElementById("archivos");
+	
+	archivos.addEventListener("change",procesar,false);
+	
+}
+
+function procesar(e){
+
+	var archivos = e.target.files;
+
+	var mi_archivo = archivos[0];
+	
+	var lector = new FileReader();
+	
+	lector.readAsText(mi_archivo,"iso-8859-1");
+	
+	lector.addEventListener("load",guardar_en_storage, false);
+}
+
+function guardar_en_storage(e){
+	
+	var resultado = e.target.result;
+	
+	localStorage.setItem("datos",resultado);
+	
+}
+
 function deleteAll() {
 	localStorage.clear();
 }

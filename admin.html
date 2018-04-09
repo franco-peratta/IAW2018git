@@ -94,8 +94,16 @@
 				</div>
 
 				<div class="IAWbanner">
-					<button type="button" class="btn btn-danger" onclick=deleteAll()>Delete
+					<section id="delete">
+					<button type="button" class="btn btn-danger" onclick="deleteAll()">Delete
 						all tournaments</button>
+					</section>
+					
+					<section id="archivo">
+					<form name="formulario">	
+						<p>Seleccionar archivo de datos<br><input type="file" onclick="saveFile()" name="archivos" id="archivos"></p>
+					</form>
+					</section>
 				</div>
 
 			</div>
