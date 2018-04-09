@@ -1,140 +1,286 @@
 {
-   "torneo":[
-      {
-         "nombre":"LAB",
-         "formato":"league",
-         "cantTeams":2,
-         "cantPlayers":5,
-		 "equipo":[
-			{
-         "nombre":"pichichen",
-         "jugador":[
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            }
-         ]
-      },
-      {
-         "nombre":"lawea",
-         "jugador":[
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            }
-         ]
-      }
-   ]
-      },
-      {
-         "nombre":"ELEAGUE",
-         "formato":"league",
-         "cantTeams":2,
-         "cantPlayers":5,
-		 "equipo":[
-      {
-         "nombre":"Cloud0",
-         "jugador":[
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            }
-         ]
-      },
-      {
-         "nombre":"FaZe",
-         "jugador":[
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            },
-            {
-               "nombre":"1",
-               "DNI":"1",
-               "edad":1
-            }
-         ]
-      }
-   ]
-      }
-   ]
+	"torneo": [
+		{
+			"nombre": "LAB",
+			"formato": "league",
+			"cantTeams": 2,
+			"cantPlayers": 5,
+			"equipo": [
+				{
+					"nombre": "pichichen",
+					"id": 0,
+					"jugador": [
+						{
+							"nombre": "Juan",
+							"DNI": "1",
+							"edad": 22
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				},
+				{
+					"nombre": "dollar blue",
+					"id": 1,
+					"jugador": [
+						{
+							"nombre": "Juan",
+							"DNI": "1",
+							"edad": 22
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				},
+				{
+					"nombre": "wd40",
+					"id": 2,
+					"jugador": [
+						{
+							"nombre": "Juan",
+							"DNI": "1",
+							"edad": 22
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				},
+				{
+					"nombre": "hot potatoes",
+					"id": 3,
+					"jugador": [
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				}
+			],
+			"partidos": [
+				{
+					"fecha1": [
+						{
+							"local": 0,
+							"visistante": 1,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "10-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": 3,
+							"visistante": 2,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "10-04-2018",
+							"estado": "pendiente"
+						}
+					],
+					"fecha2": [
+						{
+							"local": 2,
+							"visistante": 0,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "17-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": 1,
+							"visistante": 3,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "17-04-2018",
+							"estado": "pendiente"
+						}
+					],
+					"fecha3": [
+						{
+							"local": 2,
+							"visistante": 1,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": 3,
+							"visistante": 0,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				}
+			]
+		},
+		{
+			"nombre": "ELEAGUE",
+			"formato": "knockout",
+			"cantTeams": 2,
+			"cantPlayers": 5,
+			"equipo": [
+				{
+					"nombre": "Cloud0",
+					"id": 0,
+					"jugador": [
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				},
+				{
+					"nombre": "FaZe",
+					"id": 1,
+					"jugador": [
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				}
+			],
+			"partidos": [
+				{
+					"fecha1": [
+						{
+							"local": 0,
+							"visistante": 1,
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "20-04-2018",
+							"estado": "pendiente"
+						}
+					],
+					"fecha2": [
+						{
+							,"visistante":2,"puntosLocal":0,
+							,"puntosLocal":0,"puntosVisitante":0,
+							"fecha": "27-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				}
+			]
+		}
+	]
 }
