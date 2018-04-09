@@ -158,7 +158,7 @@
 			],
 			"partidos": [
 				{
-					"fecha1": [
+					"fecha": [
 						{
 							"local": 0,
 							"visistante": 1,
@@ -175,8 +175,10 @@
 							"fecha": "10-04-2018",
 							"estado": "pendiente"
 						}
-					],
-					"fecha2": [
+					]
+				},
+				{
+					"fecha": [
 						{
 							"local": 2,
 							"visistante": 0,
@@ -193,8 +195,10 @@
 							"fecha": "17-04-2018",
 							"estado": "pendiente"
 						}
-					],
-					"fecha3": [
+					]
+				},
+				{
+					"fecha": [
 						{
 							"local": 2,
 							"visistante": 1,

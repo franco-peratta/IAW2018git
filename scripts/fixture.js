@@ -4,7 +4,7 @@
 
 window.onload = function() {
 	tabla_posiciones();
-	//fixture_partidos();
+	fixture_partidos();
 }
 
 function tabla_posiciones() {
@@ -70,24 +70,40 @@ function tabla_torneo_creado(torneoActual) {
 	}
 }
 
-//function fixture_partidos() {
-//	var tabla = document.getElementById("table-partidos");
-//
-//	var partidos = JSON.parse(localStorage.getItem("torneo_elegido")).partidos;
-//
-//	var i;
-//
-//	for (i = 0; i < partidos.length; i++) {
-//		var thead = document.createElement('thead');
-//		var fecha = i + 1;
-//		thead.appendChild(document.createTextNode("Fecha " + fecha));
-//		var tr = document.createElement('tr');
-//		var th = document.createElement('th');
-//		th.setAttribute("colspan", "3");
-//		th.setAttribute("align", "center");
-//
-//		tr.appendChild(th);
-//		thead.appendChild(tr);
-//		tabla.appendChild(thead);
-//	}
-//}
+function fixture_partidos() {
+	var tabla = document.getElementById("table-partidos");
+
+	var partidos = JSON.parse(localStorage.getItem("torneo_elegido")).partidos;
+
+	var i;
+
+	for (i = 0; i < partidos.length; i++) {
+		var thead = document.createElement('thead');
+		var fecha = i + 1;
+		thead.appendChild(document.createTextNode("Fecha " + fecha));
+		var tr = document.createElement('tr');
+		var th = document.createElement('th');
+		th.setAttribute("colspan", "3");
+		th.setAttribute("align", "center");
+
+		tr.appendChild(th);
+		thead.appendChild(tr);
+		tabla.appendChild(thead);
+
+		// ACA AGREGAR LA INFO DE LOS PARTIDOS XD
+
+		// for (i = 0; i < partidos.length; i++) {
+		// console.log(partidos[i].fecha);
+		// }
+
+	}
+
+	// <tbody> -->
+	// <!-- <tr> -->
+	// <!-- <td align="left">team1</td> -->
+	// <!-- <td align="center">vs</td> -->
+	// <!-- <td align="right">team2</td> -->
+	// <!-- </tr> -->
+	// <!-- </tbody> -->
+
+}
