@@ -1,10 +1,8 @@
+@CHARSET "ISO-8859-1";
+
 body {
 	padding-top: 55px;
 	font-family: Arial, Helvetica, sans-serif;
-}
-
-h3 {
-	padding-top: 20px;
 }
 
 nav {
@@ -19,18 +17,6 @@ nav {
 	background-color: #c0c0c0;
 }
 
-#archivo{
-	margin-left: 220px;
-	padding-left: 70px;
-	padding-top: 0.01px;
-	
-}
-
-#delete{
-		float:left;	
-		height: 10px;
-}
-
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
@@ -39,6 +25,39 @@ nav {
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
 .row.content {
 	height: 80vh;
+}
+
+#imagen {
+	position: absolute;
+	margin-top: -85px; /* ADDED */
+	margin-left: 765px; /* ADDED */
+}
+
+.lista {
+	padding-top: 30px;
+}
+
+.descripcion {
+	color: black;
+}
+
+.list-group {
+	padding-top: 20px;
+}
+
+h3 {
+	padding-top: 20px;
+}
+
+#archivo {
+	margin-left: 220px;
+	padding-left: 70px;
+	padding-top: 0.01px;
+}
+
+#delete {
+	float: left;
+	height: 10px;
 }
 
 input[type=text], select, textarea {
@@ -65,7 +84,7 @@ input[type=submit]:hover {
 	background-color: #45a049;
 }
 
-.container {
+.containerAdmin {
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 20px;
@@ -91,7 +110,6 @@ form {
 	-ms-user-select: none;
 	user-select: none;
 }
-
 span {
 	cursor: pointer;
 }
@@ -100,9 +118,12 @@ li {
 	user-select: none;
 	-moz-user-select: none;
 	-khtml-user-select: none;
-} 
+}
 
-
-.lista_equipos{
+.lista_equipos {
 	padding-top: 40px;
+}
+
+.relleno {
+	height: 7vh;
 }

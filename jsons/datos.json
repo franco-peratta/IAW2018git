@@ -1,9 +1,9 @@
 {
 	"torneo": [
 		{
-			"nombre": "LAB",
+			"nombre": "LAB - division 1",
 			"formato": "league",
-			"cantTeams": 2,
+			"cantTeams": 4,
 			"cantPlayers": 5,
 			"estado": "creado",
 			"equipo": [
@@ -14,7 +14,7 @@
 					"W": 0,
 					"L": 0,
 					"PF": 0,
-					"PD": 0,
+					"PC": 0,
 					"Pts": 0,
 					"jugador": [
 						{
@@ -51,7 +51,7 @@
 					"W": 0,
 					"L": 0,
 					"PF": 0,
-					"PD": 0,
+					"PC": 0,
 					"Pts": 0,
 					"jugador": [
 						{
@@ -88,7 +88,7 @@
 					"W": 0,
 					"L": 0,
 					"PF": 0,
-					"PD": 0,
+					"PC": 0,
 					"Pts": 0,
 					"jugador": [
 						{
@@ -125,7 +125,7 @@
 					"W": 0,
 					"L": 0,
 					"PF": 0,
-					"PD": 0,
+					"PC": 0,
 					"Pts": 0,
 					"jugador": [
 						{
@@ -160,16 +160,16 @@
 				{
 					"fecha": [
 						{
-							"local": 0,
-							"visistante": 1,
+							"local": "pichichen",
+							"visitante": "dollar blue",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
 							"fecha": "10-04-2018",
 							"estado": "pendiente"
 						},
 						{
-							"local": 3,
-							"visistante": 2,
+							"local": "hot potatoes",
+							"visitante": "wd40",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
 							"fecha": "10-04-2018",
@@ -180,16 +180,16 @@
 				{
 					"fecha": [
 						{
-							"local": 2,
-							"visistante": 0,
+							"local": "wd40",
+							"visitante": "pichichen",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
 							"fecha": "17-04-2018",
 							"estado": "pendiente"
 						},
 						{
-							"local": 1,
-							"visistante": 3,
+							"local": "dollar blue",
+							"visitante": "hot potatoes",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
 							"fecha": "17-04-2018",
@@ -200,16 +200,76 @@
 				{
 					"fecha": [
 						{
-							"local": 2,
-							"visistante": 1,
+							"local": "wd40",
+							"visitante": "dollar blue",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
 							"fecha": "24-04-2018",
 							"estado": "pendiente"
 						},
 						{
-							"local": 3,
-							"visistante": 0,
+							"local": "hot potatoes",
+							"visitante": "pichichen",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "pichichen",
+							"visitante": "dollar blue",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "10-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "hot potatoes",
+							"visitante": "wd40",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "10-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "wd40",
+							"visitante": "pichichen",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "17-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "dollar blue",
+							"visitante": "hot potatoes",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "17-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "wd40",
+							"visitante": "dollar blue",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "hot potatoes",
+							"visitante": "pichichen",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
 							"fecha": "24-04-2018",
@@ -220,26 +280,26 @@
 			]
 		},
 		{
-			"nombre": "ELEAGUE",
-			"formato": "knockout",
-			"cantTeams": 2,
+			"nombre": "LAB - division 2",
+			"formato": "league",
+			"cantTeams": 4,
 			"cantPlayers": 5,
-			"estado": "creado",
+			"estado": "activo",
 			"equipo": [
 				{
-					"nombre": "Cloud0",
+					"nombre": "perdon molten",
 					"id": 0,
-					"GP": 0,
+					"GP": 2,
 					"W": 0,
-					"L": 0,
-					"PF": 0,
-					"PD": 0,
-					"Pts": 0,
+					"L": 2,
+					"PF": 122,
+					"PC": 111,
+					"Pts": 2,
 					"jugador": [
 						{
-							"nombre": "1",
+							"nombre": "Juan",
 							"DNI": "1",
-							"edad": 1
+							"edad": 22
 						},
 						{
 							"nombre": "1",
@@ -264,14 +324,88 @@
 					]
 				},
 				{
-					"nombre": "FaZe",
+					"nombre": "soy khea bro",
 					"id": 1,
-					"GP": 0,
-					"W": 0,
+					"GP": 2,
+					"W": 2,
 					"L": 0,
-					"PF": 0,
-					"PD": 0,
-					"Pts": 0,
+					"PF": 132,
+					"PC": 104,
+					"Pts": 4,
+					"jugador": [
+						{
+							"nombre": "Juan",
+							"DNI": "1",
+							"edad": 22
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				},
+				{
+					"nombre": "alcoholicos conocidos",
+					"id": 2,
+					"GP": 2,
+					"W": 1,
+					"L": 1,
+					"PF": 107,
+					"PC": 114,
+					"Pts": 3,
+					"jugador": [
+						{
+							"nombre": "Juan",
+							"DNI": "1",
+							"edad": 22
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						},
+						{
+							"nombre": "1",
+							"DNI": "1",
+							"edad": 1
+						}
+					]
+				},
+				{
+					"nombre": "cuestion de peso",
+					"id": 3,
+					"GP": 2,
+					"W": 1,
+					"L": 1,
+					"PF": 96,
+					"PC": 98,
+					"Pts": 3,
 					"jugador": [
 						{
 							"nombre": "1",
@@ -303,23 +437,121 @@
 			],
 			"partidos": [
 				{
-					"fecha1": [
+					"fecha": [
 						{
-							"local": 0,
-							"visistante": 1,
+							"local": "perdon molten",
+							"visitante": "soy khea bro",
+							"puntosLocal": 55,
+							"puntosVisitante": 72,
+							"fecha": "10-04-2018",
+							"estado": "finalizado"
+						},
+						{
+							"local": "cuestion de peso",
+							"visitante": "alcoholicos conocidos",
+							"puntosLocal": 47,
+							"puntosVisitante": 38,
+							"fecha": "10-04-2018",
+							"estado": "finalizado"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "alcoholicos conocidos",
+							"visitante": "perdon molten",
+							"puntosLocal": 69,
+							"puntosVisitante": 38,
+							"fecha": "17-04-2018",
+							"estado": "finalizado"
+						},
+						{
+							"local": "soy khea bro",
+							"visitante": "cuestion de peso",
+							"puntosLocal": 60,
+							"puntosVisitante": 49,
+							"fecha": "17-04-2018",
+							"estado": "finalizado"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "alcoholicos conocidos",
+							"visitante": "soy khea bro",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
-							"fecha": "20-04-2018",
+							"fecha": "24-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "cuestion de peso",
+							"visitante": "perdon molten",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
 							"estado": "pendiente"
 						}
-					],
-					"fecha2": [
+					]
+				},
+				{
+					"fecha": [
 						{
-							"local": 1,
-							"visistante": 2,
+							"local": "perdon molten",
+							"visitante": "soy khea bro",
 							"puntosLocal": 0,
 							"puntosVisitante": 0,
-							"fecha": "27-04-2018",
+							"fecha": "10-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "cuestion de peso",
+							"visitante": "alcoholicos conocidos",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "10-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "alcoholicos conocidos",
+							"visitante": "perdon molten",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "17-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "soy khea bro",
+							"visitante": "cuestion de peso",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "17-04-2018",
+							"estado": "pendiente"
+						}
+					]
+				},
+				{
+					"fecha": [
+						{
+							"local": "alcoholicos conocidos",
+							"visitante": "soy khea bro",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
+							"estado": "pendiente"
+						},
+						{
+							"local": "cuestion de peso",
+							"visitante": "perdon molten",
+							"puntosLocal": 0,
+							"puntosVisitante": 0,
+							"fecha": "24-04-2018",
 							"estado": "pendiente"
 						}
 					]
