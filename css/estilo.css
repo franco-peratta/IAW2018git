@@ -44,12 +44,6 @@ nav {
 	height: 94vh;
 }
 
-#imagen {
-	position: absolute;
-	margin-top: -85px; /* ADDED */
-	margin-left: 765px; /* ADDED */
-}
-
 .IAWbanner {
 	background-color: gainsboro;
 
@@ -163,4 +157,11 @@ li {
 
 #toggleButton {
 	margin-right: 20px;
+}
+
+.torneo_slogan img {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin-top: -75px;
 }

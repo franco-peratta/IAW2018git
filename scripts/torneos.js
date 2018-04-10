@@ -44,7 +44,7 @@ function cargarTorneos() {
 			var s2 = '</h4><p class="descripcion">';
 			// var s3 = '</p> <img id="imagen" src="images/asd.png"
 			// align="right" height="100px" width="100px"></a>';
-			var s3 = '<div class="torneo_slogan" style="padding-right: 0px;"><img src="images/asd.png" class="img-responsive"></div>';
+			var s3 = '<div class="torneo_slogan" style="padding-right: 0px;"><img src="images/liga.png" class="img-responsive"></div>';
 
 			var text = '';
 
