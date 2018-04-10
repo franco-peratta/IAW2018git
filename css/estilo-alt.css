@@ -1,0 +1,197 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	padding-top: 55px;
+	background-color: white;
+	height:100%;
+}
+
+
+nav {
+	background-color: #c0c0c0;
+	border-top:2px;
+}
+
+.navbar{
+	 border-top:2px solid black;
+	 border-bottom:2px solid black;
+	 border-left:2px solid black;
+	 border-right:2px solid black;
+}
+
+.navbar a {
+	color: white;
+	border-color:white;
+	text-align: center;
+
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid white;
+}
+
+.nav-item{
+	border-color:black;
+	color:white;
+}
+
+.IAWbanner {
+	background-color: #c0c0c0;
+	background-image: url(../images/basket.jpg);
+	background-repeat: no-repeat;
+}
+.col-lg-8{
+	background-color: black;	
+}
+
+.list-group-item.torneos{
+	background-color: #B8B8B8;
+	
+}
+
+.row {
+margin-right: -15px;
+ }
+
+h1{
+	color:black;
+}
+
+h2{
+	color:black;
+}
+
+label{
+	color:black;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color:black;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+	height: 94vh;
+}
+#contenido{
+	background-color:white;
+}
+
+th{
+	background-color: black;
+	color: white;
+
+}
+
+#imagen {
+	position: absolute;
+	margin-top: -85px; /* ADDED */
+	margin-left: 765px; /* ADDED */
+}
+
+.lista {
+	padding-top: 30px;
+}
+
+.descripcion {
+	color: black;
+}
+
+.list-group {
+	padding-top: 20px;
+}
+
+h3 {
+	padding-top: 20px;
+	color:black;
+}
+
+#archivo {
+	margin-left: 220px;
+	padding-left: 70px;
+	padding-top: 0.01px;
+}
+
+hr{
+	background-color:white;
+}
+
+#delete {
+	float: left;
+	height: 10px;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.containerAdmin {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+#maxp {
+	width: 45px;
+}
+
+#teams {
+	width: 45px;
+}
+
+form {
+	align: right;
+}
+
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+span {
+	cursor: pointer;
+}
+
+li {
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+
+.lista_equipos {
+	padding-top: 40px;
+}
+
+.relleno {
+	height: 7vh;
+}
+
+#toggleButton {
+	margin-right: 20px;
+}

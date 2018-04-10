@@ -89,7 +89,7 @@ function fixture_partidos() {
 		var th = document.createElement('th');
 		th.setAttribute("colspan", "3");
 		// th.setAttribute("style", "align: center");
-		th.setAttribute("style", "background-color: #02015A; color: white");
+		//th.setAttribute("style", "background-color: #02015A; color: white");
 		th.appendChild(document.createTextNode("Fecha " + fecha));
 
 		tr.appendChild(th);
@@ -150,8 +150,8 @@ function tabla_posiciones_activo(torneo){
 		list.push(arr);
 	}
 	
-	list = mergeSort(list);
-	crear_tabla(list, torneo);
+
+	crear_tabla(mergeSort(list), torneo);
 }
 
 // Split the array into halves and merge them recursively
@@ -218,8 +218,8 @@ function crear_tabla(list, torneoActual){
 		var td2 = document.createElement('td');
 		var a1 = document.createElement('a');			
 		a1.appendChild(document
-				.createTextNode(torneoActual.equipo[i].nombre));
-		a1.setAttribute("value", torneoActual.equipo[i].nombre);
+				.createTextNode(torneoActual.equipo[index].nombre));
+		a1.setAttribute("value", torneoActual.equipo[index].nombre);
 		a1.setAttribute("href", "equipo.html");
 		td2.appendChild(a1);
 		tr.appendChild(td2);
