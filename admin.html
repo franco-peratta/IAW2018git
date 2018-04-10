@@ -35,7 +35,8 @@
 				<li class="nav-item"><a class="nav-link" href="">About</a></li>
 				<li class="nav-item"><a class="nav-link" href="">Contact</a></li>
 			</ul>
-
+			<button class="btn btn-primary normal-mode" id="toggleButton"
+				type="submit" onclick="toggleMode()">Dark Mode</button>
 			<button class="btn btn-primary" type="submit" onclick=login()>Log
 				in</button>
 
@@ -102,9 +103,8 @@
 					<section id="archivo">
 						<form name="formulario">
 							<p>
-								Seleccionar archivo de datos<br>
-								<input type="file" onclick="saveFile()" name="archivos"
-									id="archivos">
+								Seleccionar archivo de datos<br> <input type="file"
+									onclick="saveFile()" name="archivos" id="archivos">
 							</p>
 						</form>
 					</section>
@@ -161,5 +161,6 @@
 					</div>
 				</div>
 	</script>
+	<script src="scripts/toggleMode.js"></script>
 </body>
 </html>

@@ -1,7 +1,6 @@
 /**
  * 
  */
-
 window.onload = function() {
 	tabla_posiciones();
 	fixture_partidos();
@@ -33,8 +32,13 @@ function tabla_torneo_creado(torneoActual) {
 
 		// Nombre del Team
 		var td2 = document.createElement('td');
-		td2.appendChild(document.createTextNode(torneoActual.equipo[i].nombre));
-		tr.appendChild(td2);
+		var a1 = document.createElement('a');			
+		a1.appendChild(document
+				.createTextNode(torneoActual.equipo[i].nombre));
+		a1.setAttribute("value", torneoActual.equipo[i].nombre);
+		a1.setAttribute("href", "equipo.html");
+		td2.appendChild(a1);
+		tr.appendChild(td2);		
 
 		// Games Played
 		var td3 = document.createElement('td');
@@ -98,21 +102,31 @@ function fixture_partidos() {
 			var tbody = document.createElement('tbody');
 
 			var tr = document.createElement('tr');
-
+			
+			// LOCAL
 			var td1 = document.createElement('td');
 			td1.setAttribute("align", "left");
-			td1
-					.appendChild(document
-							.createTextNode(partidos[i].fecha[j].local));
-
+			var a1 = document.createElement('a');			
+			a1.appendChild(document
+					.createTextNode(partidos[i].fecha[j].visitante));
+			a1.setAttribute("value", partidos[i].fecha[j].visitante);
+			a1.setAttribute("href", "equipo.html");
+			td1.appendChild(a1);			
+		
+			// VS
 			var td2 = document.createElement('td');
 			td2.setAttribute("align", "center");
 			td2.appendChild(document.createTextNode("vs"));
-
+			
+			// VISITANTE
 			var td3 = document.createElement('td');
 			td3.setAttribute("align", "right");
-			td3.appendChild(document
+			var a3 = document.createElement('a');			
+			a3.appendChild(document
 					.createTextNode(partidos[i].fecha[j].visitante));
+			a3.setAttribute("value", partidos[i].fecha[j].visitante);
+			a3.setAttribute("href", "equipo.html");
+			td3.appendChild(a3);
 
 			tr.appendChild(td1);
 			tr.appendChild(td2);
@@ -137,7 +151,6 @@ function tabla_posiciones_activo(torneo){
 	}
 	
 	list = mergeSort(list);
-	console.log(list);	
 	crear_tabla(list, torneo);
 }
 
@@ -203,7 +216,12 @@ function crear_tabla(list, torneoActual){
 
 		// Nombre del Team
 		var td2 = document.createElement('td');
-		td2.appendChild(document.createTextNode(torneoActual.equipo[index].nombre));
+		var a1 = document.createElement('a');			
+		a1.appendChild(document
+				.createTextNode(torneoActual.equipo[i].nombre));
+		a1.setAttribute("value", torneoActual.equipo[i].nombre);
+		a1.setAttribute("href", "equipo.html");
+		td2.appendChild(a1);
 		tr.appendChild(td2);
 
 		// Games Played
