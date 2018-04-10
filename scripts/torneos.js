@@ -42,13 +42,18 @@ function cargarTorneos() {
 			var i, tname, format;
 			var s1 = '';
 			var s2 = '</h4><p class="descripcion">';
-			var s3 = '</p> <img id="imagen" src="images/asd.png" align="right" height="100px" width="100px"></a>';
+			// var s3 = '</p> <img id="imagen" src="images/asd.png"
+			// align="right" height="100px" width="100px"></a>';
+			var s3 = '<div class="torneo_slogan" style="padding-right: 0px;"><img src="images/asd.png" class="img-responsive"></div>';
+
 			var text = '';
 
 			for (i = 0; i < Jorneos.torneo.length; i++) {
 				tname = Jorneos.torneo[i].nombre;
 
-				s1 = '<a onClick="seleccionarTorneo(\''+ tname+ '\')" href="torneo.html" class="list-group-item"><h4 class="list-group-item-heading">';
+				s1 = '<a onClick="seleccionarTorneo(\''
+						+ tname
+						+ '\')" href="torneo.html" class="list-group-item"><h4 class="list-group-item-heading">';
 
 				format = Jorneos.torneo[i].formato;
 				text = s1 + tname + s2 + format + s3;
