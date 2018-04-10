@@ -48,9 +48,7 @@ function cargarTorneos() {
 			for (i = 0; i < Jorneos.torneo.length; i++) {
 				tname = Jorneos.torneo[i].nombre;
 
-				s1 = '<a onClick="seleccionarTorneo(\''
-						+ tname
-						+ '\')" href="torneo.html" class="list-group-item"><h4 class="list-group-item-heading">';
+				s1 = '<a onClick="seleccionarTorneo(\''+ tname+ '\')" href="torneo.html" class="list-group-item"><h4 class="list-group-item-heading">';
 
 				format = Jorneos.torneo[i].formato;
 				text = s1 + tname + s2 + format + s3;

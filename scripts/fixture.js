@@ -16,6 +16,24 @@ function tabla_posiciones() {
 	}
 }
 
+function seleccionarEquipo(equipo) {
+	var json = JSON.parse(localStorage.getItem("datos"));
+	
+	// guardo en local storage el JSON del equipo elegido SOLAMENTE.
+	var i,j;
+	for (i = 0; i < json.torneo.length; i++) {
+		for(j = 0; j<json.torneo[i].equipo.length; j++){
+		if (json.torneo[i].equipo[j].nombre === equipo) {
+			var asd = json.torneo[i].equipo[j];
+			localStorage.setItem("equipo_elegido", JSON
+					.stringify(json.torneo[i].equipo[j]));
+			break;
+			}
+		}
+	}
+}
+
+
 function tabla_torneo_creado(torneoActual) {
 	var tabla = document.getElementById("table-posiciones");
 	var i;
@@ -34,8 +52,9 @@ function tabla_torneo_creado(torneoActual) {
 		var a1 = document.createElement('a');			
 		a1.appendChild(document
 				.createTextNode(torneoActual.equipo[i].nombre));
-		a1.setAttribute("value", torneoActual.equipo[i].nombre);
 		a1.setAttribute("href", "equipo.html");
+		var equip = torneoActual.equipo[i].nombre;
+		a1.setAttribute("onclick", 'seleccionarEquipo(\''+ equip+ '\')');
 		td2.appendChild(a1);
 		tr.appendChild(td2);		
 
@@ -88,7 +107,6 @@ function fixture_partidos() {
 		var th = document.createElement('th');
 		th.setAttribute("colspan", "3");
 		// th.setAttribute("style", "align: center");
-		// th.setAttribute("style", "background-color: #02015A; color: white");
 		th.appendChild(document.createTextNode("Fecha " + fecha));
 
 		tr.appendChild(th);
@@ -115,8 +133,9 @@ function fixture_partidos() {
 			
 			a1.appendChild(document
 					.createTextNode(txt));
-			a1.setAttribute("value", partidos[i].fecha[j].local);
+			var equip = partidos[i].fecha[j].local;
 			a1.setAttribute("href", "equipo.html");
+			a1.setAttribute("onclick", 'seleccionarEquipo(\''+ equip+ '\')');
 								
 			// VS
 			var td2 = document.createElement('td');
@@ -137,8 +156,9 @@ function fixture_partidos() {
 			txt += partidos[i].fecha[j].visitante;			
 			a3.appendChild(document
 					.createTextNode(txt));
-			a3.setAttribute("value", partidos[i].fecha[j].visitante);
+			equip = partidos[i].fecha[j].visitante;
 			a3.setAttribute("href", "equipo.html");
+			a3.setAttribute("onclick", 'seleccionarEquipo(\''+ equip+ '\')');
 			
 			td1.appendChild(a1);
 			td3.appendChild(a3);
@@ -234,8 +254,9 @@ function crear_tabla(list, torneoActual){
 		var a1 = document.createElement('a');			
 		a1.appendChild(document
 				.createTextNode(torneoActual.equipo[index].nombre));
-		a1.setAttribute("value", torneoActual.equipo[index].nombre);
 		a1.setAttribute("href", "equipo.html");
+		var equip = torneoActual.equipo[index].nombre;
+		a1.setAttribute("onclick", 'seleccionarEquipo(\''+ equip+ '\')');
 		td2.appendChild(a1);
 		tr.appendChild(td2);
 
