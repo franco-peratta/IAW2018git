@@ -13,6 +13,11 @@ nav {
 	color: white;
 }
 
+.col-8{
+    border-style: solid;
+    border-width: 1px;
+}
+
 .IAWbanner {
 	background-color: #c0c0c0;
 }
@@ -46,8 +51,8 @@ nav {
 }
 
 .IAWbanner {
-	background-color: #c0c0c0;
-	background-image: url(../images/classic1.jpg);
+	background-color: gainsboro;
+
 	background-repeat: no-repeat;
 }
 
