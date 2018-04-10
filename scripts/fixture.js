@@ -17,7 +17,6 @@ function tabla_posiciones() {
 }
 
 function tabla_torneo_creado(torneoActual) {
-
 	var tabla = document.getElementById("table-posiciones");
 	var i;
 
@@ -89,7 +88,7 @@ function fixture_partidos() {
 		var th = document.createElement('th');
 		th.setAttribute("colspan", "3");
 		// th.setAttribute("style", "align: center");
-		//th.setAttribute("style", "background-color: #02015A; color: white");
+		// th.setAttribute("style", "background-color: #02015A; color: white");
 		th.appendChild(document.createTextNode("Fecha " + fecha));
 
 		tr.appendChild(th);
@@ -102,17 +101,23 @@ function fixture_partidos() {
 			var tbody = document.createElement('tbody');
 
 			var tr = document.createElement('tr');
+			var txt;
 			
 			// LOCAL
 			var td1 = document.createElement('td');
 			td1.setAttribute("align", "left");
-			var a1 = document.createElement('a');			
+			var a1 = document.createElement('a');	
+			txt = partidos[i].fecha[j].local;
+			
+			if(partidos[i].fecha[j].estado === "finalizado"){
+				txt += ' ('+partidos[i].fecha[j].puntosLocal+')';
+			}
+			
 			a1.appendChild(document
-					.createTextNode(partidos[i].fecha[j].visitante));
-			a1.setAttribute("value", partidos[i].fecha[j].visitante);
+					.createTextNode(txt));
+			a1.setAttribute("value", partidos[i].fecha[j].local);
 			a1.setAttribute("href", "equipo.html");
-			td1.appendChild(a1);			
-		
+								
 			// VS
 			var td2 = document.createElement('td');
 			td2.setAttribute("align", "center");
@@ -121,13 +126,23 @@ function fixture_partidos() {
 			// VISITANTE
 			var td3 = document.createElement('td');
 			td3.setAttribute("align", "right");
-			var a3 = document.createElement('a');			
+			var a3 = document.createElement('a');
+			
+			if(partidos[i].fecha[j].estado === "finalizado"){
+				txt = '('+partidos[i].fecha[j].puntosVisitante+') ';
+			}
+			else
+				txt = '';
+			
+			txt += partidos[i].fecha[j].visitante;			
 			a3.appendChild(document
-					.createTextNode(partidos[i].fecha[j].visitante));
+					.createTextNode(txt));
 			a3.setAttribute("value", partidos[i].fecha[j].visitante);
 			a3.setAttribute("href", "equipo.html");
+			
+			td1.appendChild(a1);
 			td3.appendChild(a3);
-
+						
 			tr.appendChild(td1);
 			tr.appendChild(td2);
 			tr.appendChild(td3);
